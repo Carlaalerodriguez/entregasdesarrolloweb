@@ -4,30 +4,62 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>FEM Fabricaciones Electro Mecanicas</title>
+	<!-- link Bootstrap-->	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<!-- link css-->
 	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	 <!-- link animacion-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 
 <body>
-		<!-- contendor padre nuestra planta -->
-		<div class="contenedorgeneralnuestraplanta">
 
-		<!-- aqui empieza  el encabezado -->
-			
-		<header class="encabezadoindex bordes">
+	<!-- aqui empieza  el encabezado -->
+	<div class="container-fluid padding border">
+			<div class="row padding nav">
+				<div class="col-lg-3 col-xs-1 contenedorlogo">
 
-			<img class="logo" src="../Assets/Imagenes/logo.png" alt="logo">			
-			<nav class="barradenavegacion">
+						<img data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" class="logo" src="../Assets/Imagenes/logo.png" alt="logo ubicacion">
+				</div>
+
+				<div class="col-lg-9 col-xs-11">
+
+						<nav class="navbar navbar-expand-lg navbar-light bg-light padding">
+							<ul class="navbar-nav">
+								<li class="nav-item active">
+									<a class="navbar-brand" href="../index.html">Inicio</a>	
+								</li>
+							</ul>							  
+							  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							  <span class="navbar-toggler-icon"></span>
+							  </button>
+
+							  <div class="collapse navbar-collapse" id="navbarNav">
+							    <ul class="navbar-nav">
+							      <li class="nav-item active">
+							        <a class="nav-link" href="../Pages/quienessomos.html">Quienes somos<span class="sr-only">(current)</span></a>
+							      </li>
+							      <li class="nav-item">
+							        <a class="nav-link" href="../Pages/productos.html">Productos</a>
+							      </li>
+							      <li class="nav-item">
+							        <a class="nav-link" href="../Pages/nuestraplanta.html">Nuestra Planta</a>
+							      </li>
+							      <li class="nav-item">
+							     	<a class="nav-link" href="../Pages/contacto.html">Contacto</a>
+							      </li>
+							    </ul>
+							  </div>
+						</nav>		
 					
-				<li class="barradenavegacionb"><a href="Pages/index.html">Inicio</a></li>
-				<li class="barradenavegacionb"><a href="Pages/quienessomos.html">Quienes Somos</a></li>
-				<li class="barradenavegacionb"><a href="Pages/productos.html">Productos-Portafolio</a></li>
-				<li class="barradenavegacionb"><a href="Pages/nuestraplanta.html">Nuestra Planta</a></li>	
-				<li class="barradenavegacionb"><a href="Pages/contacto.html">Contactos</a></li>		
-			</nav>
-
-		</header>
-		<!-- aqui termina  el encabezado -->
+				</div>
+			
+		</div>
+		
+	</div>
+<!-- aqui termina  el encabezado -->
 
 		<!-- aqui comienza  el cuerpo -->
 		<main class="cuerponuestraplanta bordes">
@@ -64,6 +96,14 @@
 		<!-- aqui termina  el pie -->
 
 		</div>
+		<!-- aqui inicia el codigo de animacion michalsnik-->
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+ 		 AOS.init();
+		</script>
+
+		<!-- aqui finaliza el codigo de animacion michalsnik-->	
 	
 </body>
 </html>

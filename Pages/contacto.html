@@ -4,88 +4,135 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>FEM Fabricaciones Electro Mecanicas</title>
+	<!-- link Bootstrap-->	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	 <!-- link animacion-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- link css-->
 	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
 </head>
 
 
 <body>
-		<!-- contendor padre contacto -->
-
-		<div class="contenedorgeneralcontacto">
-			
 		<!-- aqui empieza  el encabezado -->
-		<header class="encabezadoindex bordes">
+	<div class="container-fluid padding border">
+			<div class="row padding nav">
+				<div class="col-lg-3 col-xs-1 ">
 
-			<img class="logo" src="../Assets/Imagenes/logo.png" alt="logo">			
-			<nav class="barradenavegacion">
+						<img data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" class="logo contenedorlogo" src="../Assets/Imagenes/logo.png" alt="logo ubicacion">
+				</div>
+
+				<div class="col-lg-9 col-xs-11">
+
+						<nav class="navbar navbar-expand-lg navbar-light bg-light padding">
+							<ul class="navbar-nav">
+								<li class="nav-item active">
+									<a class="navbar-brand" href="../index.html">Inicio</a>	
+								</li>
+							</ul>							  
+							  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							  <span class="navbar-toggler-icon"></span>
+							  </button>
+
+							  <div class="collapse navbar-collapse" id="navbarNav">
+							    <ul class="navbar-nav">
+							      <li class="nav-item active">
+							        <a class="nav-link" href="../Pages/quienessomos.html">Quienes somos<span class="sr-only">(current)</span></a>
+							      </li>
+							      <li class="nav-item">
+							        <a class="nav-link" href="../Pages/productos.html">Productos</a>
+							      </li>
+							      <li class="nav-item">
+							        <a class="nav-link" href="../Pages/nuestraplanta.html">Nuestra Planta</a>
+							      </li>
+							      <li class="nav-item">
+							     	<a class="nav-link" href="../Pages/contacto.html">Contacto</a>
+							      </li>
+							    </ul>
+							  </div>
+						</nav>		
 					
-				<li class="barradenavegacionb"><a href="Pages/index.html">Inicio</a></li>
-				<li class="barradenavegacionb"><a href="Pages/quienessomos.html">Quienes Somos</a></li>
-				<li class="barradenavegacionb"><a href="Pages/productos.html">Productos-Portafolio</a></li>
-				<li class="barradenavegacionb"><a href="Pages/nuestraplanta.html">Nuestra Planta</a></li>	
-				<li class="barradenavegacionb"><a href="Pages/contacto.html">Contactos</a></li>		
-			</nav>
-
-		</header>
-	<!-- aqui termina  el encabezado -->
+				</div>
+			
+		</div>
 		
-	<!-- aqui comienza  el cuerpo -->	
+	</div>
+<!-- aqui termina  el encabezado -->
+		
+<!-- aqui comienza  el formulario -->	
 		<main class="formulario--contacto">
 
-				<div>
+				<div class="container">
 
-					<h1>CONTACTANOS</h1>
+					<div class="row">
+
+						<div class="col-lg-12 col-xs-12">
+							<p class=" padding p">CONTACTANOS</p>
+						</div>
+					</div>
+				</div>
+					
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-12 col-xs-12 border padding">
+						<form>
+							  <div class="form-group">
+							    <label for="nombre y Apellido">Nombre y Apellido</label> 
+							    <input type="nombre y Apellido" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+							  </div>
+							   <div class="form-group">
+							    <label for="Empresa o Municipio">Empresa o Municipio</label> 
+							    <input type="Empresa o Municipio" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">					
+							  </div>
+							  <div class="form-group">
+							    <label for="Email">Email</label> 
+							    <input type="Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+							    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+							  </div>
+							    <div class="form-group">
+							    <label for="Telefono">Telefono</label> 
+							    <input type="Telefono" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+							    <small id="emailHelp" class="form-text text-muted">We'll never share your phone with anyone else.</small>
+							  </div>
+							  <button type="submit" class="btn btn-primary">Enviar</button>
+							  <button type="to reset" class="btn btn-primary">Resetear</button>
+						</form>					
+					</div>					
+				</div>
+			</div>
+
+	<!-- aqui termina el formulario -->
 
 		
-
-			<section>
-				<!-- creacion de formulario -->
-				<form>
-					
-					<br>
-					<input class="formulario--1" type="text" placeholder="Nombre y Apellido">
-						<br>
-					<input class="formulario--1" type="text" placeholder="Empresa o Municipio">
-						<br>
-					<input class="formulario--1" type="email" placeholder="email">
-						<br>
-					<input class="formulario--1" type="number" placeholder="Teléfono">
-						<br>
-					<h5 class="formulario--1">Cliente</h5>
-					<input class="formulario--1" type="checkbox" name="aceptar"value="1">
-					<h5 class="formulario--1">Proveedor</h5>
-					<input class="formulario--1" type="checkbox" name="aceptar"value="2">
-					<br>
-					<textarea class="formulario--1" placeholder="Dejanos tu comentario"></textarea>
-					<br>
-					<input class="formulario--1" type="submit" value="Enviar">
-					<input class="formulario--1" type="reset" value="Resetear">
-					
-				</form>
-
-
-			</section>
-			
-
-		</main>
-		<!-- aqui termina el cuerpo -->
-		<!-- aqui empieza  el pie -->
-
-		<footer class="piebordeindex bordes" >
-
-			
+	<!-- aqui empieza  el pie -->
+	<div class="container padding border">
+		<div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom"class="row padding footer">
+			<div class="col-lg6 col-xs-12">
 				<h3>FABRICANTE - METALMECANICO</h3>
-				<h4>Direccion: Erminio Malvino 3319</h4>
-				<h4>Teléfono: 0351 481-5955</h4>
-				<h4>Mail: femsa@femcordoba.com.ar</h4>
-				<h4>Córdoba- Argentina</h4>
-					
-			
+			</div>
 
-		</footer>
-		<!-- aqui termina  el pie -->
+			<div class="col-lg6 col-xs-12">
+				<p>Direccion: Erminio Malvino 3319</p>
+				<p>Teléfono: 0351 481-5955</p>
+				<p>Mail: femsa@femcordoba.com.ar</p>
+				<p>Córdoba- Argentina</p>
+			</div>
+			
+		</div>
+		
+	</div>
+<!-- aqui termina  el pie -->
 
 		</div>
-	
+
+		<!-- aqui inicia el codigo de animacion michalsnik-->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+ 		 AOS.init();
+		</script>
+		<!-- aqui finaliza el codigo de animacion michalsnik-->	
 </body>
 </html>
