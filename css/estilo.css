@@ -1,0 +1,80 @@
+.logo{
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+
+}
+
+
+.p{
+	font-size: 25px;
+	text-align: center;
+}
+
+/* vista mobile */
+
+@media only screen and (max-width: 768px){
+
+
+	.padding{
+		padding: 35px;
+	
+	}
+
+	.width{
+
+	width: 550px
+
+}
+
+.contenedorlogo{
+
+justify-content: center
+
+}
+
+.ubicacion{
+
+	margin-left: auto;
+}
+
+}
+
+/* vista desktop */
+
+@media only screen and (min-width: 1024px){
+
+
+.padding{
+		padding: 20px;
+	
+	}
+
+
+.width{
+
+	width: 400px
+}
+
+.container-fluid{
+
+	width: 964px
+}
+
+.container{
+
+	width: 964px
+}
+
+.footer{
+justify-content: space-evenly
+}
+
+.nav{
+	
+	font-size: 22px
+}
+
+
+
+}
