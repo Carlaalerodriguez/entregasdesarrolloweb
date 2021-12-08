@@ -1,0 +1,37 @@
+li {
+  padding: 10px; }
+  li a {
+    margin: 20px; }
+    li a:hover {
+      background-color: green; }
+
+.navbar {
+  margin: 20px;
+  font-size: 20px;
+  background-color: black; }
+
+.logo {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin: 15px; }
+
+@media only screen and (min-width: 1023px) {
+  .cuerpoquienessomos {
+    background-color: black;
+    padding: 40px; }
+  .detalle h1 {
+    color: white;
+    padding: 40px;
+    text-align: center; }
+  .detalle p {
+    color: white;
+    padding: 40px;
+    text-align: justify; } }
+
+.texto-quienessomos2 {
+  padding: 40px;
+  width: 700px;
+  height: 500px;
+  margin-left: 350px;
+  border-color: white; }

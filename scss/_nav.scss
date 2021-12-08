@@ -1,0 +1,38 @@
+@import "colores";
+
+	$letras:serif;
+	$tamaño:20px;
+	$ptop:10px;
+	
+
+
+
+li{
+  		padding: $ptop; 
+
+				
+			a {
+					margin: $tamaño;
+			&:hover {
+				background-color: $verde;
+					}
+		
+				}
+	}
+
+.navbar{
+	margin: 20px;
+	font-size: 20px;
+	background-color: $negro;
+
+}	
+
+
+
+.logo{
+	width: 100px;
+	height: 100px;
+	padding: $ptop;
+	margin: 15px;
+
+}
