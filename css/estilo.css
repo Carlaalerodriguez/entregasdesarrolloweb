@@ -1,37 +1,95 @@
-li {
-  padding: 10px; }
-  li a {
-    margin: 20px; }
-    li a:hover {
-      background-color: green; }
+h3 {
+  color: #3673D9; }
 
-.navbar {
-  margin: 20px;
-  font-size: 20px;
-  background-color: black; }
+p {
+  color: #000; }
+
+footer {
+  background-color: green;
+  display: flex; }
+  footer h3 {
+    color: white; }
+
+h3 {
+  color: #3673D9; }
+
+p {
+  color: #000; }
+
+.encabezado {
+  width: 1000px;
+  padding: 50px; }
+  .encabezado h1 {
+    font-size: 50px; }
+
+body h3 {
+  font-size: 12px;
+  color: black; }
+
+.pad1 {
+  padding: 10px; }
+
+.pad2 {
+  padding: 20px; }
+
+.pad3 {
+  padding: 30px; }
+
+.pad4 {
+  padding: 40px; }
+
+.pad5 {
+  padding: 50px; }
+
+.green {
+  color: green !important; }
+
+.grey {
+  color: grey !important; }
+
+.black {
+  color: black !important; }
+
+.margin-10 {
+  margin: 10px; }
+
+.margin-20 {
+  margin: 20px; }
+
+.margin-30 {
+  margin: 30px; }
+
+.margin-40 {
+  margin: 40px; }
+
+.margin-50 {
+  margin: 50px; }
+
+h3 {
+  font-family: tahoma; }
 
 .logo {
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-  margin: 15px; }
+  width: 50px;
+  height: 50px; }
 
-@media only screen and (min-width: 1023px) {
-  .cuerpoquienessomos {
-    background-color: black;
-    padding: 40px; }
-  .detalle h1 {
-    color: white;
-    padding: 40px;
-    text-align: center; }
-  .detalle p {
-    color: white;
-    padding: 40px;
-    text-align: justify; } }
+.boton, .boton--aceptar, .boton--cancelar {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  border: 1px solid black;
+  text-align: center; }
 
-.texto-quienessomos2 {
-  padding: 40px;
-  width: 700px;
-  height: 500px;
-  margin-left: 350px;
-  border-color: white; }
+.boton--aceptar {
+  background-color: green;
+  color: white; }
+
+.boton--cancelar {
+  background-color: red;
+  color: white; }
+
+p {
+  color: red;
+  font-size: 40px;
+  text-align: center; }

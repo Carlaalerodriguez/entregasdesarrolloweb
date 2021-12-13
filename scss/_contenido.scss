@@ -1,0 +1,74 @@
+@import "colores";
+
+$p50:50px;
+$ancho:500px;
+$h3desk:33px;
+$h3mob:22px;
+
+.encabezado{
+	width:$ancho*2;  
+	padding:$p50;
+	h1{
+		font-size:50px;
+	}
+}
+// condicionales 
+$vista:tablet;
+body {
+	@if $vista == desktop {
+		@media only screen and (min-width: 1023px){
+			h3{
+				font-size:$h3desk;
+				color:$verde ;
+			}
+		}
+	}@else if $vista == mobile {
+		@media only screen and (max-width: 768px){
+			h3{
+				font-size:$h3mob;
+				color:$gris;
+			}
+		}	
+	}@else{
+		h3 {
+			font-size:12px;
+			color:$negro;
+		}
+	}
+
+}
+
+// bucle padding
+
+@for $opcion from 1 through 5 {
+	.pad#{$opcion}{
+		padding:10px * $opcion;
+	}
+}
+
+@each $color in $verde, $gris , $negro {
+	.#{$color}{
+		color:#{$color}!important;
+	}
+} 
+
+@each $margin in 10, 20, 30, 40, 50 {
+	.margin-#{$margin}{
+		margin:#{$margin}px;
+	}
+}
+
+$familiaTipografica:(
+	encabezado: tahoma,
+	subtitulo: lato,
+	parrafo: oswald
+	);
+
+h3{
+	font-family: map-get($familiaTipografica,encabezado);
+}
+
+.logo{
+	width: 50px;
+	height: 50px;
+}
