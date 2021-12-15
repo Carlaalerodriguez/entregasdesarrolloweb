@@ -1,0 +1,21 @@
+$verde:green;
+$gris:grey;
+$negro:black;
+$blanco:white;
+
+
+$paletaColores:(
+	primario:#3673D9,
+	secundario: lightblue,
+	gris: grey,
+	negro: #000,
+	blanco: #fff
+	);
+
+h3{
+	color:map-get($paletaColores,primario);
+}
+
+p{
+	color:map-get($paletaColores,negro);
+}
